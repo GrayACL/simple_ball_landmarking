@@ -51,4 +51,4 @@ Predicted and ground-truth centres are matched using the **Hungarian algorithm**
 
 ## AI Usage Disclaimer
 
-Model design, dataset annotation, and evaluation methodology are my own work. Implementation was built with heavy AI assistance, but happy to discuss architecture in further detail upon request.
+Model design, dataset annotation, and evaluation methodology are my own work. Model code was built with AI assistance, but happy to discuss architecture in further detail upon request.
