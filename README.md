@@ -29,11 +29,11 @@ A lightweight CNN (`BallHeatmapCNN` in `model.py`):
 
 Input: `(B, 3, 1080, 1920)` → Output: `(B, 1, 135, 240)`
 
-Trained with a **weighted MSE loss** that upweights positive (ball) pixels relative to background, since the vast majority of heatmap pixels are near-zero — without this, the model would trivially learn to predict all-zero heatmaps.
+Trained with a **weighted MSE loss** that upweights positive (ball) pixels relative to background, since the vast majority of heatmap pixels are near-zero.
 
 ## Evaluation
 
-Predicted and ground-truth centres are matched using the **Hungarian algorithm** (`scipy.optimize.linear_sum_assignment`) on pairwise distance, with unmatched predictions/labels counted as false positives/negatives. Metrics reported (`evaluate()` in `model.py`):
+Predicted and ground-truth centres are matched using the **Hungarian algorithm** (`scipy.optimize.linear_sum_assignment`) on pairwise distance, with unmatched predictions/labels counted as false positives/negatives.
 
 - R² (overall, x, y)
 - Mean distance error (heatmap-scale and original-resolution)
